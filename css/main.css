@@ -15,14 +15,23 @@ header{
 	height: 242px;
 }
 
+footer{
+	background-color: #1a2230;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+	color: white;
+	font-size: 2rem;
+}
+
 .robot {
 	width: 320px;
 	position: relative;
 	margin: 0 auto;
 }
-.body {
 
-width: 320px;
+.body {
+	width: 320px;
 	position: relative;
 	top: 57px;
 }
@@ -38,12 +47,27 @@ width: 320px;
 	width: 125px;
 	position: absolute;
 	top: 19px;
-  right: 35px;
+  	right: 35px;
 }
 
 .head-left {
 	width: 125px;
 	position: absolute;
 	top: 19px;
-  left: 35px;
+  	left: 35px;
+}
+
+header:hover .head-right{
+	right: -26px;
+	transition: all 250ms linear;
+}
+
+header:hover .head-left{
+	left: -26px;
+	transition: all 250ms linear;
+}
+
+header:hover .brain{
+	top: 39px;
+	transition: all 200ms linear;
 }
